@@ -3,10 +3,8 @@
 # This script is executed after the container is created.
 
 # Install uv
-pip install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Install dependencies for all packages
-uv pip install -e cli
-uv pip install -e core
-uv pip install -e service
-uv pip install -e utils
+# Use the repository setup script to sync uv environments and install dev deps
+./setup.sh
