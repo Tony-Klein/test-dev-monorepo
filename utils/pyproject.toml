@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mono-utils"
+version = "0.1.0"
+description = "Utilities package depending on core"
+requires-python = ">=3.11"
+dependencies = [
+  "mono-core"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.uv.sources]
+mono-core = { path = "../core", editable = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mono_utils"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]

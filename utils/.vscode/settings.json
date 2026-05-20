@@ -1,0 +1,21 @@
+// Folder settings for the `utils` package.
+// Interpreter: uses the package-local virtualenv so tests run with that environment.
+{
+  // `python.defaultInterpreterPath`: interpreter used for this folder (package-local venv).
+  "python.defaultInterpreterPath": "/workspaces/codespaces-blank/utils/.venv/bin/python",
+
+  // `python.testing.unittestEnabled`: disable unittest discovery (we use pytest).
+  "python.testing.unittestEnabled": false,
+
+  // `python.testing.pytestEnabled`: enable pytest for this folder.
+  "python.testing.pytestEnabled": true,
+
+  // `python.testing.pytestArgs`: extra pytest args; `-q` makes output concise.
+  "python.testing.pytestArgs": ["-q"],
+
+  // `python.testing.autoTestDiscoverOnSaveEnabled`: re-run discovery when files are saved.
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+  // `python.terminal.activateEnvironment`: automatically activate the venv in terminals.
+  "python.terminal.activateEnvironment": true
+}

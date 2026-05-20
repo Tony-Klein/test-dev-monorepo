@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mono-cli"
+version = "0.1.0"
+description = "CLI package for the monorepo"
+requires-python = ">=3.11"
+dependencies = [
+  "mono-core",
+  "mono-utils",
+  "mono-service"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.uv.sources]
+mono-core = { path = "../core", editable = true }
+mono-utils = { path = "../utils", editable = true }
+mono-service = { path = "../service", editable = true }
+
+[project.scripts]
+mono-cli = "mono_cli.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mono_cli"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]

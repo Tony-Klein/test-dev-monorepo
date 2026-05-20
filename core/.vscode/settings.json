@@ -1,0 +1,22 @@
+// Folder settings for the `core` package.
+// Interpreter: uses the package-local virtualenv so tests run with that environment.
+{
+  // `python.defaultInterpreterPath`: use this package's local virtualenv interpreter.
+  "python.defaultInterpreterPath": "/workspaces/codespaces-blank/core/.venv/bin/python",
+
+  // `python.testing.unittestEnabled`: disable unittest discovery (we use pytest).
+  "python.testing.unittestEnabled": false,
+
+  // `python.testing.pytestEnabled`: enable pytest for test discovery/runs in this folder.
+  "python.testing.pytestEnabled": true,
+
+  // `python.testing.pytestArgs`: arguments passed to pytest (discovery and runs).
+  // `-q` keeps output concise for the Test Explorer.
+  "python.testing.pytestArgs": ["-q"],
+
+  // `python.testing.autoTestDiscoverOnSaveEnabled`: re-run discovery on save.
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+  // `python.terminal.activateEnvironment`: activate the venv when opening integrated terminals.
+  "python.terminal.activateEnvironment": true
+}

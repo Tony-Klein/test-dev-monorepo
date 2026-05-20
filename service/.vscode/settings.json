@@ -1,0 +1,22 @@
+// Folder settings for the `service` package.
+// Interpreter: uses the package-local virtualenv so tests run with that environment.
+{
+  // `python.defaultInterpreterPath`: path to the Python interpreter for this folder.
+  // Set to the package-local `.venv` so pytest runs use the package's dependencies.
+  "python.defaultInterpreterPath": "/workspaces/codespaces-blank/service/.venv/bin/python",
+
+  // `python.testing.unittestEnabled`: disable unittest discovery (pytest used instead).
+  "python.testing.unittestEnabled": false,
+
+  // `python.testing.pytestEnabled`: enable pytest for discovery and test runs.
+  "python.testing.pytestEnabled": true,
+
+  // `python.testing.pytestArgs`: extra args for pytest. `-q` reduces noise in Test Explorer.
+  "python.testing.pytestArgs": ["-q"],
+
+  // `python.testing.autoTestDiscoverOnSaveEnabled`: re-run discovery automatically on saves.
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+  // `python.terminal.activateEnvironment`: activate the configured environment in terminals.
+  "python.terminal.activateEnvironment": true
+}

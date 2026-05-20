@@ -1,0 +1,25 @@
+// Folder settings for the `cli` package.
+// Interpreter: uses the package-local virtualenv so tests run with that environment.
+// Note: VS Code accepts comments in these files (JSONC).
+{
+  // `python.defaultInterpreterPath`: path to the Python interpreter used for this folder.
+  // Set to the package-local virtualenv so running tests uses the package's dependencies.
+  "python.defaultInterpreterPath": "/workspaces/codespaces-blank/cli/.venv/bin/python",
+
+  // `python.testing.unittestEnabled`: disable unittest discovery for pytest-only projects.
+  "python.testing.unittestEnabled": false,
+
+  // `python.testing.pytestEnabled`: enable pytest for this folder.
+  "python.testing.pytestEnabled": true,
+
+  // `python.testing.pytestArgs`: additional arguments passed to pytest during discovery/runs.
+  // Here `-q` makes output concise for the Test Explorer; replace with paths to limit discovery.
+  "python.testing.pytestArgs": ["-q"],
+
+  // `python.testing.autoTestDiscoverOnSaveEnabled`: re-run discovery on file save.
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+  // `python.terminal.activateEnvironment`: when opening an integrated terminal,
+  // automatically activate the configured Python environment.
+  "python.terminal.activateEnvironment": true
+}
