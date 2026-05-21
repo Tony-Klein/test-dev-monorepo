@@ -2,7 +2,7 @@
 // Interpreter: uses the package-local virtualenv so tests run with that environment.
 {
   // `python.defaultInterpreterPath`: use this package's local virtualenv interpreter.
-  "python.defaultInterpreterPath": "/workspaces/codespaces-blank/core/.venv/bin/python",
+  // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 
   // `python.testing.unittestEnabled`: disable unittest discovery (we use pytest).
   "python.testing.unittestEnabled": false,

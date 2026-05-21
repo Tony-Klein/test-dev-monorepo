@@ -1,6 +1,6 @@
 {
   "folders": [
-    //{ "path": ".", "name": "Codespaces-blank" },
+    { "path": ".", "name": "Codespaces-blank" },
     { "path": "core", "name": "Core" },
     { "path": "utils", "name": "Utils" },
     { "path": "service", "name": "Service" },

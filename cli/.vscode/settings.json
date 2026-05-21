@@ -4,7 +4,7 @@
 {
   // `python.defaultInterpreterPath`: path to the Python interpreter used for this folder.
   // Set to the package-local virtualenv so running tests uses the package's dependencies.
-  "python.defaultInterpreterPath": "/workspaces/codespaces-blank/cli/.venv/bin/python",
+  // "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
 
   // `python.testing.unittestEnabled`: disable unittest discovery for pytest-only projects.
   "python.testing.unittestEnabled": false,

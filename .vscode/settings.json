@@ -2,7 +2,7 @@
 {
   // `python.defaultInterpreterPath`: path to the Python interpreter used for this folder.
   // Set to the package-local virtualenv so running tests uses the package's dependencies.
-  "python.defaultInterpreterPath": "/workspaces/codespaces-blank/core/.venv/bin/python",
+  //"python.defaultInterpreterPath": "/workspaces/codespaces-blank/core/.venv/bin/python",
 
   // `python.testing.unittestEnabled`: enable Python's unittest test discovery.
   // Set to false because this project uses pytest.
@@ -10,7 +10,8 @@
 
   // `python.testing.pytestEnabled`: enable pytest as the test framework.
   // When true, the Python extension will run pytest for discovery and test runs.
-  "python.testing.pytestEnabled": true,
+  // Set to false in root because there are no tests.
+  "python.testing.pytestEnabled": false,
 
   // `python.testing.autoTestDiscoverOnSaveEnabled`: when true, VS Code will
   // re-run test discovery whenever you save files, keeping the Test Explorer up to date.
