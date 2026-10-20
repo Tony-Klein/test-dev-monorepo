@@ -1,0 +1,17 @@
+# Normalize text files to LF in Git
+* text=auto eol=lf
+
+# Keep Python files as LF
+*.py text eol=lf
+
+# Windows-oriented files use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files must not be line-ending normalized
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
